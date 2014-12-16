@@ -68,7 +68,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <h2>Keys</h2>
 <ul>
 <li><code>subject</code> - Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.</li>
-<li><code>action</code> - Factor w/ 6 levels. Contain activity labels:</li>
+<li><code>activity</code> - Factor w/ 6 levels. Contain activity labels:</li>
 </ul>
 <div id="activity-labels-for-key-action" class="section level4">
 <h4>Activity labels for key “action”</h4>
@@ -84,19 +84,87 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 </div>
 <div id="variables" class="section level2">
 <h2>Variables</h2>
+<p>All variables is numerical. This file contain:</p>
 <ul>
-<li><code>mean(tBodyAcc_mean_X)</code> - numerical, mean of tBodyAcc-X for each activity and each subject.</li>
-<li><code>mean(tBodyAcc_mean_Y)</code> - numerical, mean of tBodyAcc-Y for each activity and each subject.</li>
-<li><code>mean(tBodyAcc_mean_Z)</code>- numerical, mean of tBodyAcc-Z for each activity and each subject.</li>
-<li><code>mean(tBodyAcc_std_X)</code> - numerical, standart deviation of tBodyAcc-X for each activity and each subject.</li>
-<li><code>mean(tBodyAcc_std_Y)</code> - numerical, standart deviation of tBodyAcc-Y for each activity and each subject.</li>
-<li><code>mean(tBodyAcc_std_Z)</code> -numerical, standart deviation of tBodyAcc-Z for each activity and each subject.</li>
-<li><code>mean(tBodyGyro_mean_X)</code> -numerical, standart deviation of tBodyGyro-X for each activity and each subject.</li>
-<li><code>mean(tBodyGyro_mean_Y)</code> -numerical, standart deviation of tBodyGyro-Y for each activity and each subject.</li>
-<li><code>mean(tBodyGyro_mean_Z)</code> -numerical, standart deviation of tBodyGyro-Z for each activity and each subject.</li>
-<li><code>mean(tBodyGyro_std_X)</code> -numerical, standart deviation of tBodyGyro-X for each activity and each subject.</li>
-<li><code>mean(tBodyGyro_std_Y)</code> -numerical, standart deviation of tBodyGyro-Y for each activity and each subject.</li>
-<li><code>mean(tBodyGyro_std_Z)</code> -numerical, standart deviation of tBodyGyro-Z for each activity and each subject.</li>
+<li>“tBodyAcc-mean()-X”<br /></li>
+<li>“tBodyAcc-mean()-Y”</li>
+<li>“tBodyAcc-mean()-Z”</li>
+<li>“tBodyAcc-std()-X”<br /></li>
+<li>“tBodyAcc-std()-Y”</li>
+<li>“tBodyAcc-std()-Z”</li>
+<li>“tGravityAcc-mean()-X”<br /></li>
+<li>“tGravityAcc-mean()-Y”</li>
+<li>“tGravityAcc-mean()-Z”</li>
+<li>“tGravityAcc-std()-X”<br /></li>
+<li>“tGravityAcc-std()-Y”</li>
+<li>“tGravityAcc-std()-Z”</li>
+<li>“tBodyAccJerk-mean()-X”<br /></li>
+<li>“tBodyAccJerk-mean()-Y”</li>
+<li>“tBodyAccJerk-mean()-Z”</li>
+<li>“tBodyAccJerk-std()-X”<br /></li>
+<li>“tBodyAccJerk-std()-Y”</li>
+<li>“tBodyAccJerk-std()-Z”</li>
+<li>“tBodyGyro-mean()-X”<br /></li>
+<li>“tBodyGyro-mean()-Y”</li>
+<li>“tBodyGyro-mean()-Z”</li>
+<li>“tBodyGyro-std()-X”<br /></li>
+<li>“tBodyGyro-std()-Y”</li>
+<li>“tBodyGyro-std()-Z”</li>
+<li>“tBodyGyroJerk-mean()-X”<br /></li>
+<li>“tBodyGyroJerk-mean()-Y”</li>
+<li>“tBodyGyroJerk-mean()-Z”</li>
+<li>“tBodyGyroJerk-std()-X”<br /></li>
+<li>“tBodyGyroJerk-std()-Y”</li>
+<li>“tBodyGyroJerk-std()-Z”</li>
+<li>“tBodyAccMag-mean()”<br /></li>
+<li>“tBodyAccMag-std()”</li>
+<li>“tGravityAccMag-mean()”</li>
+<li>“tGravityAccMag-std()”</li>
+<li>“tBodyAccJerkMag-mean()”</li>
+<li>“tBodyAccJerkMag-std()”</li>
+<li>“tBodyGyroMag-mean()”<br /></li>
+<li>“tBodyGyroMag-std()”</li>
+<li>“tBodyGyroJerkMag-mean()”</li>
+<li>“tBodyGyroJerkMag-std()”<br /></li>
+<li>“fBodyAcc-mean()-X”</li>
+<li>“fBodyAcc-mean()-Y”</li>
+<li>“fBodyAcc-mean()-Z”<br /></li>
+<li>“fBodyAcc-std()-X”</li>
+<li>“fBodyAcc-std()-Y”</li>
+<li>“fBodyAcc-std()-Z”<br /></li>
+<li>“fBodyAcc-meanFreq()-X”</li>
+<li>“fBodyAcc-meanFreq()-Y”</li>
+<li>“fBodyAcc-meanFreq()-Z”<br /></li>
+<li>“fBodyAccJerk-mean()-X”</li>
+<li>“fBodyAccJerk-mean()-Y”</li>
+<li>“fBodyAccJerk-mean()-Z”<br /></li>
+<li>“fBodyAccJerk-std()-X”</li>
+<li>“fBodyAccJerk-std()-Y”</li>
+<li>“fBodyAccJerk-std()-Z”<br /></li>
+<li>“fBodyAccJerk-meanFreq()-X”</li>
+<li>“fBodyAccJerk-meanFreq()-Y”</li>
+<li>“fBodyAccJerk-meanFreq()-Z”<br /></li>
+<li>“fBodyGyro-mean()-X”</li>
+<li>“fBodyGyro-mean()-Y”</li>
+<li>“fBodyGyro-mean()-Z”<br /></li>
+<li>“fBodyGyro-std()-X”</li>
+<li>“fBodyGyro-std()-Y”</li>
+<li>“fBodyGyro-std()-Z”<br /></li>
+<li>“fBodyGyro-meanFreq()-X”</li>
+<li>“fBodyGyro-meanFreq()-Y”</li>
+<li>“fBodyGyro-meanFreq()-Z”<br /></li>
+<li>“fBodyAccMag-mean()”</li>
+<li>“fBodyAccMag-std()”</li>
+<li>“fBodyAccMag-meanFreq()”<br /></li>
+<li>“fBodyBodyAccJerkMag-mean()”</li>
+<li>“fBodyBodyAccJerkMag-std()”</li>
+<li>“fBodyBodyAccJerkMag-meanFreq()”</li>
+<li>“fBodyBodyGyroMag-mean()”</li>
+<li>“fBodyBodyGyroMag-std()”</li>
+<li>“fBodyBodyGyroMag-meanFreq()”<br /></li>
+<li>“fBodyBodyGyroJerkMag-mean()”</li>
+<li>“fBodyBodyGyroJerkMag-std()”</li>
+<li>“fBodyBodyGyroJerkMag-meanFreq()”</li>
 </ul>
 </div>
 
