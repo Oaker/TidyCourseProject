@@ -26,15 +26,14 @@ You should run script run_analysis.R that does the following.
 
 ## Steps of tiding data
 
-* Load activity labels from `activity_labels.txt` 
-* Load data abaut subjects from `subject_test.txt`
-* Load test infromation from file `y_test.txt`
+* Load activity labels from `activity_labels.txt`
+* Load features names from `features.txt`
+* Load test data from files: `X_test.txt`,`Y_test.txt`, `subject_test.txt`
+* Load train data from files: `X_train.txt`,`Y_train.txt`, `subject_train.txt`
 * Merge subject data, and test data.
-* Join activity labels and measurement.
-* Load data from "Inertial Signals" directory
-* Merges whole test sets to create one data set.
-* Calculate mean() and std() for all variables by using `calcMeanAndSd<-function ()` 
-* Tidy dataset.
+* Extracts only the measurements on the mean and standard deviation for each measurement.
+* Uses descriptive activity names to name the activities in the data set
+* Appropriately labels the data set with descriptive variable names. 
 * Group tyding dataset by action and subject
 * Calculate mean() for each of action and subject pair.
 * Write result to txt file `tidyDataSet.txt`  
